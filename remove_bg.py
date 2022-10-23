@@ -6,7 +6,7 @@ parser=ap.ArgumentParser(description='Remove image background')
 parser.add_argument('-i','--input',help='input image path')
 args=vars(parser.parse_args())
 if args['input']==None:
-    print('bagi la input wei')
+    print('no input path was given')
 else:
     input=args['input']
     input=input.replace('\\','/')
